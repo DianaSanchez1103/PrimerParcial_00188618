@@ -72,9 +72,8 @@ p{
 }
 
 .big-hero p {
-    font-size: 0.7em;;
+    font-size: 0.7em;
     color: #D7DEE6;
-
 }
 
 /* Social links*/
@@ -91,7 +90,7 @@ p{
 .social-links li a{
     color: #D7DEE6;
     text-decoration: none;
-    font-size: 2.5em;
+    font-size: 60px;
 }
 
 
@@ -127,7 +126,12 @@ p{
     background-color: #ffffff;
     text-align: left;
     padding-bottom: 2em;
+    margin-left: 9px;
+    margin-bottom: 10px;
+    height: 350px;
+    width: 95%;
 }
+
 
 .post article img{
     height: 150px;
@@ -260,6 +264,7 @@ footer .social-links {
     
 }
 
+
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
   
@@ -273,10 +278,10 @@ footer .social-links {
     .post ul li {
         min-height: 350px;
         max-height: 3500px;
+        max-width: 400px;
         margin: 1rem 2rem;
         flex: 1 0 300px;
     }
-
 
     .logo {
         width: 150px;
@@ -300,9 +305,12 @@ footer .social-links {
         display: flex;
         margin-top: 1em;
     }
-
-
-
+    .green-area ul li article{
+        margin-right: 20px;
+        margin-bottom: 10px;
+        height: 400px;
+        width: 400px;
+    }
 
     /*TODO: FALTA CSS */
 } 
@@ -311,7 +319,64 @@ footer .social-links {
 
        /*TODO: FALTA CSS */
 
+    .header .menu{
+        padding: 0px;
+        margin-top: 40px;
+    }
 
+    .header .menu li{
+        padding-top: 0px;
+    }
+
+    .header .logo{
+        margin-top: 40px;
+        margin-left: 25px;
+    }
+
+    .header>a{
+        margin-left: 25px;
+    }
+
+    .about h2{
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    .about .container{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-auto-rows: 80px 1fr;
+    
+    }
+    
+    .about .container h2{
+        padding-bottom: 10px;
+        text-align: center;
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+    }
+    
+    .about .container .bio-info{
+        margin-left: 15px;
+        margin-right: 15px;
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+    
+    .about .container .contact{
+        grid-column: 2 / span 1;
+    }
+
+    .green-area ul li article{
+        margin-right: 15px;
+        margin-bottom: 20px;
+        height: 400px;
+        width: 330px;
+    }
+
+    .about .container h2{
+        margin-bottom: 20px;
+    }
 
 }
 
@@ -322,5 +387,149 @@ footer .social-links {
         width: 80%;
         margin: 0 auto;
         max-width: 1440px;
+        
     }
+
+    .about .container{
+        display: grid;
+        grid-template-columns: repeat(2,700px);
+        grid-auto-rows: 80px 1fr;
+        margin-left:30px; 
+    }
+    
+    .about .container h2{
+        padding-bottom: 10px;
+        text-align: center;
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+    }
+    
+    .about .container .bio-info{
+        margin-left: 15px;
+        margin-right: 15px;
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+    
+    .about .container .contact{
+        grid-column: 2 / span 1;
+    }
+
+    .green-area ul li article{
+        margin-right: 15px;
+        margin-bottom: 20px;
+        height: 400px;
+        width: 330px;
+    }
+}
+
+.about .container .contact-form {
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom:50px;
+}
+
+.container .header .logo{
+    margin-left: 20px;
+}
+
+.container .header .menu{
+    margin-right: 55px;
+}
+
+.about .container .contact-form input:last-child{
+    width: 8.3em;
+}
+
+/*COLOR CONTACTO*/
+header nav ul li a:hover{
+    color: red;
+}
+
+footer .social-links .fab{
+    font-size: 90px;
+}
+
+footer .social-links .fa-github{
+    margin-right: 25px;
+}
+
+.big-hero p {
+    font-size: 10px;
+     padding-top: 10px;
+     padding-bottom: 0px;
+}
+
+.big-hero .container .social-links{
+    margin-bottom: 15px;
+}
+
+.big-hero .container .social-links .fa-github{
+    font-size: 90px;
+    margin-right: 25px;
+}
+
+.big-hero .container .social-links .fa-twitter{
+    font-size: 90px;
+    margin-left: 35px;
+}
+
+footer .social-links .fa-twitter{
+    margin-left: 25px;
+}
+
+.big-hero img{
+    margin-top: 40px;
+}
+
+.big-hero h2{
+    margin-top:10px; 
+    font-size: 30px;
+}
+
+.big-hero p{
+    font-size:15px;
+}
+
+.container .header .menu a{
+    font-size: 18px;
+}
+
+.big-hero .container .social-links{
+    margin-top:0px;
+}
+
+.big-hero .container .hide-mobile {
+    margin-top:25px;
+    color: #0AC693;
+    margin-bottom: 90px;
+}
+
+.big-hero .container .hide-mobile i{
+    font-size: 70px;
+}
+
+.big-hero .container img{
+    width: 170px;
+    height: 170px;
+}
+
+.green-area h2{
+    font-size: 20px;
+}
+
+.green-area ul li article h3{
+    font-size:14px;
+}
+
+.green-area ul li article p{
+    font-size: 12px;
+}
+
+.header .logo{
+    margin-left: 0.5em;
+}
+
+.big-hero .container .fab{
+    margin-bottom: 15px;
 }
