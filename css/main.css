@@ -319,13 +319,24 @@ footer .social-links {
 
        /*TODO: FALTA CSS */
 
+    .post ul li {
+        min-height: 350px;
+        max-height: 3500px;
+        max-width: 280px;
+        margin-left: 0px;
+        margin-right: 25px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        flex: 1 0 300px;
+    }
+
     .header .menu{
         padding: 0px;
         margin-top: 40px;
     }
 
     .header .menu li{
-        padding-top: 0px;
+        padding-top: 15px;
     }
 
     .header .logo{
@@ -370,8 +381,8 @@ footer .social-links {
     .green-area ul li article{
         margin-right: 15px;
         margin-bottom: 20px;
-        height: 400px;
-        width: 330px;
+        height: 450px;
+        width: 270px;
     }
 
     .about .container h2{
@@ -388,6 +399,33 @@ footer .social-links {
         margin: 0 auto;
         max-width: 1440px;
         
+    }
+
+    .post h2{
+        padding-top:30px;
+    }
+
+    .post{
+        margin-top:40px;
+        padding: 0px;
+    }
+
+    .post ul li {
+        min-height: 350px;
+        max-height: 3500px;
+        max-width: 340px;
+        margin-left: 0px;
+        margin-right: 25px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        flex: 1 0 300px;
+    }
+
+    .green-area ul li article{
+        margin-right: 30px;
+        margin-bottom: 20px;
+        height: 400px;
+        width: 330px;
     }
 
     .about .container{
@@ -420,6 +458,37 @@ footer .social-links {
         margin-bottom: 20px;
         height: 400px;
         width: 330px;
+    }
+}
+
+@media only screen and (min-width: 2560px){
+    .about .container {
+        margin-left: 80px;
+        margin:0 auto;
+        max-width: 2560px;
+        
+    }
+
+    .about .container{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-auto-rows: 80px 1fr;
+    }
+    
+    .about .container h2{
+        padding-bottom: 10px;
+        text-align: center;
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+    }
+    
+    .about .container .bio-info{
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+    
+    .about .container .contact{
+        grid-column: 2 / span 1;
     }
 }
 
