@@ -17,7 +17,7 @@ body {
     text-align: center;
     font-weight: 400;
 }
-
+/*HEADER*/
 .header {
     display: flex;
     justify-content: space-between
@@ -59,6 +59,24 @@ p{
     font-size: 1.6rem;
 }
 
+/*Margen izquierdo en el elemento logo*/
+.container .header .logo{
+    margin-left: 20px;
+}
+/*Margen derecho en el elemento menu*/
+.container .header .menu{
+    margin-right: 55px;
+}
+
+/*Color rojo cuando el mouse se coloca sobre cada elemento de la lista*/
+header nav ul li a:hover{
+    color: red;
+}
+
+/*Tamaño de letra de los elementos del menu*/
+.container .header .menu a{
+    font-size: 18px;
+}
 /* Big area */
 .big-hero img {
     width: 150px;
@@ -74,6 +92,63 @@ p{
 .big-hero p {
     font-size: 0.7em;
     color: #D7DEE6;
+}
+/*Margen superior imagen, ancho y alto*/
+.big-hero img{
+    margin-top: 40px;
+    width: 170px;
+    height: 170px;
+}
+
+/*Margin de h2 y tamaño de letra*/
+.big-hero h2{
+    margin-top:10px; 
+    font-size: 30px;
+}
+/*Tamaño de letra de p, padding superior e inferior*/
+.big-hero p{
+    font-size:15px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+/*Margen superior de los simbolos de las redes sociales*/
+.big-hero .container .social-links{
+    margin-top:0px;
+}
+
+/*Color de flecha, margen superior y margen inferior*/
+.big-hero .container .hide-mobile {
+    margin-top:25px;
+    color: #0AC693;
+    margin-bottom: 90px;
+}
+
+/*Tamaño de flecha */
+.big-hero .container .hide-mobile i{
+    font-size: 70px;
+}
+
+/*Margen inferior de los iconos de las redes sociales*/
+.big-hero .container .fab{
+    margin-bottom: 15px;
+}
+
+/*Margen inferior de ambos simbolo de redes sociales*/
+.big-hero .container .social-links{
+    margin-bottom: 15px;
+}
+
+/*Tamaño de simbolo y margen derecho logo Github*/
+.big-hero .container .social-links .fa-github{
+    font-size: 90px;
+    margin-right: 25px;
+}
+
+/*Tamaño de simbolo y margen izquierdo logo Twitter*/
+.big-hero .container .social-links .fa-twitter{
+    font-size: 90px;
+    margin-left: 35px;
 }
 
 /* Social links*/
@@ -98,6 +173,20 @@ p{
     background-color: #0AC693; 
 }
 
+/*Tamaño de letra h2*/
+.green-area h2{
+    font-size: 20px;
+}
+
+/*Tamaño de letra h3*/
+.green-area ul li article h3{
+    font-size:14px;
+}
+
+/*Tamaño de letra de p*/
+.green-area ul li article p{
+    font-size: 12px;
+}
 
 .post {
     padding: 1em;
@@ -157,7 +246,19 @@ p{
 }
 
 /* About */
+/*Margen izquierdo, derecho e inferior de la seccion de contactos*/
+.about .container .contact-form {
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom:50px;
+}
 
+/*Ancho del boton contactar*/
+.about .container .contact-form input:last-child{
+    width: 8.3em;
+}
+
+/*Margen superior de todo el div*/
 .about{
     margin-top: 2em;
 }
@@ -264,6 +365,21 @@ footer .social-links {
     
 }
 
+/*Footer*/
+/*Tamaño de simbolos redes sociales*/
+footer .social-links .fab{
+    font-size: 90px;
+}
+
+/*Margen derecho logo Github*/
+footer .social-links .fa-github{
+    margin-right: 25px;
+}
+
+/*Margen izquierdo logo Twitter*/
+footer .social-links .fa-twitter{
+    margin-left: 25px;
+}
 
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
@@ -538,113 +654,3 @@ footer .social-links {
     }
 }
 
-.about .container .contact-form {
-    margin-right: 25px;
-    margin-left: 25px;
-    margin-bottom:50px;
-}
-
-.container .header .logo{
-    margin-left: 20px;
-}
-
-.container .header .menu{
-    margin-right: 55px;
-}
-
-.about .container .contact-form input:last-child{
-    width: 8.3em;
-}
-
-/*COLOR CONTACTO*/
-header nav ul li a:hover{
-    color: red;
-}
-
-footer .social-links .fab{
-    font-size: 90px;
-}
-
-footer .social-links .fa-github{
-    margin-right: 25px;
-}
-
-.big-hero p {
-    font-size: 10px;
-     padding-top: 10px;
-     padding-bottom: 0px;
-}
-
-.big-hero .container .social-links{
-    margin-bottom: 15px;
-}
-
-.big-hero .container .social-links .fa-github{
-    font-size: 90px;
-    margin-right: 25px;
-}
-
-.big-hero .container .social-links .fa-twitter{
-    font-size: 90px;
-    margin-left: 35px;
-}
-
-footer .social-links .fa-twitter{
-    margin-left: 25px;
-}
-
-.big-hero img{
-    margin-top: 40px;
-}
-
-.big-hero h2{
-    margin-top:10px; 
-    font-size: 30px;
-}
-
-.big-hero p{
-    font-size:15px;
-}
-
-.container .header .menu a{
-    font-size: 18px;
-}
-
-.big-hero .container .social-links{
-    margin-top:0px;
-}
-
-.big-hero .container .hide-mobile {
-    margin-top:25px;
-    color: #0AC693;
-    margin-bottom: 90px;
-}
-
-.big-hero .container .hide-mobile i{
-    font-size: 70px;
-}
-
-.big-hero .container img{
-    width: 170px;
-    height: 170px;
-}
-
-.green-area h2{
-    font-size: 20px;
-}
-
-.green-area ul li article h3{
-    font-size:14px;
-}
-
-.green-area ul li article p{
-    font-size: 12px;
-}
-
-.header .logo{
-    margin-left: 0.5em;
-}
-
-.big-hero .container .fab{
-    margin-bottom: 15px;
-}
