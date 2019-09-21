@@ -462,6 +462,13 @@ footer .social-links {
 }
 
 @media only screen and (min-width: 2560px){
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 2560px;
+        
+    }
+
     .about .container {
         margin-left: 80px;
         margin:0 auto;
@@ -489,6 +496,45 @@ footer .social-links {
     
     .about .container .contact{
         grid-column: 2 / span 1;
+    }
+
+    .about .container .bio-info p{
+        font-size:35px;
+        line-height: 33px;
+    }
+
+    .container{
+        margin-left:250px;
+        margin-right: 250px;
+    }
+
+    .container .header img{
+        margin-top:0px;
+        width: 250px;
+        height: 150px;
+    }
+
+    .containe .header .logo{
+        padding-left:50px;
+    }
+
+    .container .header .menu li a{
+        font-size: 30px;
+    }
+
+    .post ul li {
+        min-height: 350px;
+        max-height: 3500px;
+        max-width: 510px;
+        margin-left: 0px;
+        margin-right: 55px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        flex: 1 0 300px;
+    }
+
+    .post ul li article{
+        width: 510px;
     }
 }
 
